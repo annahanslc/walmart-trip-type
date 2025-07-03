@@ -15,13 +15,7 @@ def drop_visitnumber(df):
     return df
 
 
-def pre_preprocess():
-    # Import file
-    df = import_data("../data-ignore/train.csv")
-
-    # Goupby VisitNumber
-    df = groupby_visitnumber(df)
-
+def pre_preprocess(df):
     # Drop VisitNumber
     df = drop_visitnumber(df)
 
