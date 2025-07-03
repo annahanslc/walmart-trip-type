@@ -11,4 +11,8 @@ dependencies = [
     "scikit-learn>=1.7.0",
     "seaborn>=0.13.2",
     "streamlit>=1.46.1",
+    "tensorboard>=2.19.0",
+    "torch>=2.7.1",
+    "torchaudio>=2.7.1",
+    "torchvision>=0.22.1",
 ]
