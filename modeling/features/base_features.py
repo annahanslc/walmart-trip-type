@@ -8,6 +8,7 @@ def groupby_visitnumber(df):
         total_scancount=("ScanCount", "sum"),
         num_unique_dept=("DepartmentDescription", "nunique"),
         num_unique_fileline=("FinelineNumber", "nunique"),
+        contains_return=("returns", "max"),
     )
     df.reset_index(inplace=True)
     return df
@@ -22,6 +23,7 @@ def groupby_visitnumber_kaggle(df):
         total_scancount=("ScanCount", "sum"),
         num_unique_dept=("DepartmentDescription", "nunique"),
         num_unique_fileline=("FinelineNumber", "nunique"),
+        contains_return=("returns", "max"),
     )
     df.reset_index(inplace=True)
     return df
